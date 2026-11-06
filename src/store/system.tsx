@@ -11,7 +11,7 @@ const SystemContext = createContext<SystemState | null>(null);
 export function SystemProvider({ children }: { children: ReactNode }) {
   const [wallpaper, setWallpaper] = useState<WallpaperId>(() => {
     const saved = localStorage.getItem("portfolio-os:wallpaper");
-    return wallpapers.some((wp) => wp.id === saved) ? (saved as WallpaperId) : "aurora";
+    return wallpapers.some((wp) => wp.id === saved) ? (saved as WallpaperId) : "ember";
   });
 
   useEffect(() => {
