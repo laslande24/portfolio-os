@@ -1,78 +1,82 @@
 import type { Profile, Project } from "./types";
 
-/**
- * ── EDIT THIS FILE ─────────────────────────────────────────────
- * All portfolio content lives here. Replace the placeholder
- * values with your own information before deploying.
- */
+// Same facts as the current portfolio (portfolio-romaric-soh/src/content/profile.ts).
+// Public contact only: no phone number, no date of birth.
 
 export const profile: Profile = {
-  name: "Your Name",
-  role: "Fullstack Developer",
-  location: "Paris, France",
-  email: "you@example.com",
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
-  bio: "Fullstack developer specialized in JavaScript, PHP and Python. I build useful, polished web applications — from database schema to pixel-perfect UI.",
+  name: "Romaric Soh",
+  role: "Front-end and full-stack developer",
+  location: "Douala, Cameroon",
+  email: "sohromaric30@gmail.com",
+  github: "https://github.com/laslande24",
+  linkedin: "https://linkedin.com/in/romaric-fogang-soh",
+  bio: "Developer based in Douala, Cameroon. I design and build web and mobile apps, from the Figma prototype to the database rules, and I am at home in French, English and German. Open to remote work and to relocating. This desktop is my previous portfolio; the current one is at romaricsoh.vercel.app.",
   skills: [
-    { category: "Frontend", items: ["React", "TypeScript", "Tailwind CSS", "GSAP", "Vite"] },
-    { category: "Backend", items: ["Node.js", "PHP", "Python", "REST APIs", "Supabase"] },
-    { category: "Database", items: ["PostgreSQL", "MySQL", "Redis"] },
-    { category: "Tools", items: ["Git", "Docker", "Linux", "CI/CD"] },
+    { category: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "GSAP", "Motion"] },
+    { category: "Mobile", items: ["Expo", "React Native", "Reanimated"] },
+    { category: "Backend", items: ["Supabase", "PostgreSQL", "Symfony", "Django", "Express"] },
+    { category: "Design & quality", items: ["Figma", "UML", "WCAG 2.2", "Playwright", "Vitest"] },
   ],
   experience: [
     {
-      period: "2024 — Present",
-      title: "Fullstack Developer",
-      place: "Freelance",
-      detail: "Building web applications for clients — React frontends, PHP/Node backends, PostgreSQL databases.",
+      period: "May 2024 — Feb 2025",
+      title: "Web developer",
+      place: "AFREETECH, Yaoundé",
+      detail: "Public-sector platforms in Cameroon: Figma prototype and React front end with map layers for PAGIRN-PPTIC, features for the OBSDATA weather app in Symfony and React, specifications and user guides.",
     },
     {
-      period: "2023 — 2024",
-      title: "Junior Developer",
-      place: "Company Name",
-      detail: "Developed and maintained internal tools. Shipped features across the full stack.",
+      period: "Dec 2023 — Apr 2024",
+      title: "Software development intern",
+      place: "QTA TECH, Douala",
+      detail: "Modelled in UML and designed in Figma, then built a hybrid app for pre-financing requests with an AI integration, from analysis to delivery.",
+    },
+    {
+      period: "Jun — Oct 2021",
+      title: "Mobile development intern",
+      place: "Peers Exchange (PEEXIT), Douala",
+      detail: "Worked on a hybrid mobile app in React Native.",
     },
   ],
 };
 
 export const projects: Project[] = [
   {
-    name: "PortfolioOS",
+    name: "Redekunst-Challenge",
     description:
-      "This very site — an interactive portfolio styled as a desktop operating system. Draggable windows, working terminal, dock with magnification.",
-    tags: ["React", "TypeScript", "GSAP", "Supabase"],
-    github: "https://github.com/yourusername/portfolio-os",
-    gradient: "from-indigo-500 via-purple-500 to-pink-500",
+      "Registrations and live public voting for a German-language debate contest. Postgres with row-level security, votes over Supabase Realtime, a projection screen that updates as they arrive.",
+    tags: ["Next.js", "Supabase", "Realtime", "Tailwind"],
+    demo: "https://romaricsoh.vercel.app/en/work/redekunst-challenge",
+    gradient: "from-red-500 via-red-700 to-stone-900",
     year: "2026",
   },
   {
-    name: "Project Two",
+    name: "Laufwort",
     description:
-      "Short description of a real project you built. What problem does it solve, and what makes it interesting technically?",
-    tags: ["PHP", "MySQL", "Tailwind"],
-    github: "https://github.com/yourusername/project-two",
-    demo: "https://example.com",
-    gradient: "from-emerald-500 via-teal-500 to-cyan-500",
-    year: "2025",
+      "Practise German while you run: lessons spoken aloud, answers given out loud, sessions that adapt to your effort. A very animated native interface.",
+    tags: ["Expo", "React Native", "Reanimated", "TypeScript"],
+    github: "https://github.com/laslande24/laufwort",
+    demo: "https://romaricsoh.vercel.app/en/work/laufwort",
+    gradient: "from-lime-300 via-lime-500 to-emerald-700",
+    year: "2026",
   },
   {
-    name: "Project Three",
+    name: "7SETS",
     description:
-      "Another project. Keep descriptions to two sentences — enough to hook a recruiter into clicking the GitHub link.",
-    tags: ["Python", "FastAPI", "PostgreSQL"],
-    github: "https://github.com/yourusername/project-three",
-    gradient: "from-orange-500 via-amber-500 to-yellow-500",
-    year: "2025",
+      "A landing page for a tennis academy, built from a designer's mockup. The page scrolls like a match, with GSAP choreography, WCAG 2.2 AA and Playwright tests.",
+    tags: ["Next.js", "GSAP", "Lenis", "Playwright"],
+    github: "https://github.com/laslande24/7sets",
+    demo: "https://romaricsoh.vercel.app/en/work/7sets",
+    gradient: "from-lime-400 via-emerald-700 to-slate-900",
+    year: "2026",
   },
   {
-    name: "Project Four",
+    name: "PortfolioOS",
     description:
-      "A fourth project slot. Delete or duplicate these entries as needed — the grid adapts automatically.",
-    tags: ["JavaScript", "Node.js", "Redis"],
-    github: "https://github.com/yourusername/project-four",
-    gradient: "from-sky-500 via-blue-500 to-indigo-500",
-    year: "2024",
+      "This desktop: a window manager written without a UI library, a GSAP boot sequence, a dock with magnification, and contact messages stored in Supabase.",
+    tags: ["React", "Vite", "GSAP", "Supabase"],
+    github: "https://github.com/laslande24/portfolio-os",
+    gradient: "from-stone-500 via-stone-700 to-stone-950",
+    year: "2026",
   },
 ];
 

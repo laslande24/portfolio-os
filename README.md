@@ -26,7 +26,7 @@
 ## Getting started
 
 ```bash
-git clone https://github.com/yourusername/portfolio-os.git
+git clone https://github.com/laslande24/portfolio-os.git
 cd portfolio-os
 npm install
 npm run dev
